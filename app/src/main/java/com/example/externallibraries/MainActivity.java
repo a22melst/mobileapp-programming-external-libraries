@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 if (switchImg) {
                     Picasso.get().load(url1).fit().into(img);
                     switchImg = false;
@@ -39,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
                     Picasso.get().load(url2).fit().into(img);
                     switchImg = true;
                 }
-
             }
         });
 
